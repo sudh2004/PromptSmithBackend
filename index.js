@@ -16,7 +16,7 @@ const authModel = require('./auth')
 // const crypto = require('crypto');
 // const bodyParser = require('body-parser');
 app.use(cors({
-  origin: 'http://your-frontend-domain.com', // Replace with your frontend's actual domain
+  origin: 'http://139.59.86.106:8080', // Replace with your frontend's actual domain
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,  // Allow cookies and credentials to be sent
   optionsSuccessStatus: 204, // Some legacy browsers (IE11, various SmartTVs) choke on 204
