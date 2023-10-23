@@ -15,12 +15,7 @@ const authModel = require('./auth')
 // const nodemailer = require('nodemailer');
 // const crypto = require('crypto');
 // const bodyParser = require('body-parser');
-app.use(cors({
-  origin: 'http://139.59.86.106:8080', // Replace with your frontend's actual domain
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,  // Allow cookies and credentials to be sent
-  optionsSuccessStatus: 204, // Some legacy browsers (IE11, various SmartTVs) choke on 204
-}))
+app.use(cors())
 app.use(express.json())
 
 mongoose.connect(mongodburl,{useNewUrlParser:true,useUnifiedTopology:true}) 
